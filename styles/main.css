@@ -1,0 +1,10 @@
+@import "color.css";
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    padding: 0 260px 0 260px;
+}

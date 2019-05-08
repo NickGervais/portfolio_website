@@ -1,0 +1,38 @@
+:root {
+    --black: #040404;
+    --dark-gray: #3F3F3F;
+    --gray: #6E6E6E;
+    --white: #FFFFFF;
+    --accent: #EF6A6B;
+}
+.text-white {
+    color: var(--white);
+}
+.text-gray {
+    color: var(--gray);
+}
+.text-dark-gray {
+    color: var(--dark-gray);
+}
+.text-black {
+    color: var(--black);
+}
+.text-accent {
+    color: var(--accent);
+}
+
+.fill-white {
+    background-color: var(--white);
+}
+.fill-gray {
+    background-color: var(--gray);
+}
+.fill-dark-gray {
+    background-color: var(--dark-gray);
+}
+.fill-black {
+    background-color: var(--black);
+}
+.fill-accent {
+    background-color: var(--accent);
+}
