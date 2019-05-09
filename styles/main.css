@@ -124,3 +124,12 @@ textarea:focus, input:focus{
     color: var(--white);
     border: 0.5px solid var(--accent);
 }
+
+footer {
+    margin-top: 100px;
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: underline;
+}
