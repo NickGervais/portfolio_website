@@ -65,21 +65,13 @@
                 <p>2016 - 2018</p>
             </span>
         </section>
-        <section class="section-class">
+        <section class="section-contact">
             <h3>Contact</h3>
             <form id="message-form">
-                <label>
-                    <input id="name" type="name" name="name" placeholder="name" required>
-                </label>
-                <label>
-                    <input id="email" type="email" name="email" placeholder="email" required>
-                </label>
-                <label>
-                    <input id="message" type="text" name="message" placeholder="message" required>
-                </label>
-                <div>
-                    <input id="send-message" type="submit" value="send message"> 
-                </div>
+                <input id="name" type="name" name="name" placeholder="name" maxlength="60" required>
+                <input id="email" type="email" name="email" placeholder="email" maxlength="60" required>
+                <textarea form="message-form" id="message" type="text" name="message" placeholder="message" maxlength="400" rows="4" required></textarea>
+                <input id="send-message" type="submit" value="send message"> 
             </form>
         </section>
         <footer>

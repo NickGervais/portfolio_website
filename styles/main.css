@@ -29,7 +29,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--white);
+    border: 0.5px solid var(--white);
 }
 
 header nav a {
@@ -76,11 +76,51 @@ section ul {
 .section-work h3 {
     width: 100%;
 }
+
 .section-work span {
     box-sizing: border-box;
     width: 49%;
-    margin: .5%;
-    border: 1px solid var(--white);
+    margin: 0.5%;
+    border: 0.5px solid var(--white);
     padding: 20px 40px 20px 40px;
     text-align: center;
+}
+
+.section-contact {
+    margin-top: 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+form input, textarea {
+    width: 400px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 5px 0;
+    padding: 10px 20px 10px 20px;
+    background: transparent;
+    border: 0.5px solid var(--white);
+    color: var(--gray);
+    font-family: inherit;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#send-message {
+    background: var(--white);
+    color: var(--black);
+    cursor: pointer;
+}
+
+#send-message:hover {
+    background: var(--accent);
+    color: var(--white);
+    border: 0.5px solid var(--accent);
 }
