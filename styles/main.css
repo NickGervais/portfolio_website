@@ -1,4 +1,5 @@
 @import "color.css";
+@import "flex.css";
 
 html, body {
     margin: 0;
@@ -14,15 +15,12 @@ body {
     border-bottom: 0.5px solid var(--white);
 }
 
-.flex {
-    display: flex;
-}
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 30px 0 15px 0;
+    font-size: 12px;
 }
 
 .logo {
@@ -30,7 +28,7 @@ header {
     width: 24px;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     border: 1px solid var(--white);
 }
 
@@ -41,12 +39,32 @@ header nav a {
 .landing {
     display: flex;
     flex-wrap: wrap;
-    padding: 35vh 0 35vh 0;
+    padding: 30vh 0 30vh 0;
     line-height: 40px;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .landing div {
     margin: 0 0.3em 0 0;
     letter-spacing: 2px;
+}
+
+section h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--gray);
+    border-bottom: 0.5px solid var(--white);
+    padding-bottom: 15px;
+    margin: 0 0 30px 0;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.half-section {
+    width: 40%;
 }
