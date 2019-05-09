@@ -68,3 +68,19 @@ section ul {
 .half-section {
     width: 40%;
 }
+
+.section-work {
+    margin-top: 200px;
+}
+
+.section-work h3 {
+    width: 100%;
+}
+.section-work span {
+    box-sizing: border-box;
+    width: 49%;
+    margin: .5%;
+    border: 1px solid var(--white);
+    padding: 20px 40px 20px 40px;
+    text-align: center;
+}
