@@ -161,7 +161,7 @@ body::after {
     width: 150%;
     height: 600px;
     transform-origin: top right;
-    transform: rotate(18deg);
+    transform: rotate(10deg);
     background: var(--gray);
     opacity: 0.5;
     z-index: -1;
