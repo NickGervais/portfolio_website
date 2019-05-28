@@ -58,7 +58,7 @@ section h3 {
     font-size: 18px;
     font-weight: 500;
     color: var(--gray);
-    border-bottom: 0.5px solid var(--white);
+    border-bottom: 1px solid var(--white);
     padding-bottom: 15px;
     margin: 0 0 30px 0;
 }
@@ -76,6 +76,9 @@ section ul {
 
 .section-work {
     margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-work h3 {
@@ -83,12 +86,60 @@ section ul {
 }
 
 .section-work span {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
-    width: 49%;
-    margin: 0.5%;
-    border: 0.5px solid var(--white);
+    margin: 10px;
+    border: 1px solid var(--white);
     padding: 20px 40px 20px 40px;
     text-align: center;
+    overflow: hidden;
+}
+
+.section-work span h4 {
+    margin-top: 0;
+    transition: 400ms ease-in-out;
+}
+
+.section-work span .slider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section-work span .slider div {
+    position: absolute;
+    bottom: 0;
+    transition: 400ms ease-in-out;
+}
+
+.section-work span .slider div h5{
+    margin: 20px 0 0 0;
+}
+
+.section-work span .slider p {
+    margin: 0;
+    position: relative;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: 400ms ease-in-out;
+}
+
+.section-work span:hover h4 {
+    transform: scale(1.1);
+}
+
+.section-work span:hover .slider div{
+    opacity: 0;
+}
+
+.section-work span:hover .slider p {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .section-contact {
