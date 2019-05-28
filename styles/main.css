@@ -17,7 +17,7 @@ body {
 }
 
 .white-border-bottom {
-    border-bottom: 0.5px solid var(--white);
+    border-bottom: 1px solid var(--white);
 }
 
 header {
@@ -75,7 +75,7 @@ section ul {
 }
 
 .section-work {
-    margin-top: 200px;
+    margin-top: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +86,8 @@ section ul {
 }
 
 .section-work span {
-    width: 80%;
+    width: 700px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,6 +123,7 @@ section ul {
 }
 
 .section-work span .slider p {
+    font-size: 1em;
     margin: 0;
     position: relative;
     opacity: 0;
@@ -143,7 +145,7 @@ section ul {
 }
 
 .section-contact {
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
 form {
@@ -154,15 +156,16 @@ form {
 }
 
 form input, textarea {
-    width: 400px;
+    width: 700px;
     max-width: 100%;
     box-sizing: border-box;
-    margin: 0 0 5px 0;
+    margin: 10px;
     padding: 10px 20px 10px 20px;
     background: transparent;
-    border: 0.5px solid var(--white);
+    border: 1px solid var(--white);
     color: var(--gray);
     font-family: inherit;
+    font-size: 1em;
 }
 
 textarea:focus, input:focus{
@@ -178,11 +181,11 @@ textarea:focus, input:focus{
 #send-message:hover {
     background: var(--accent);
     color: var(--white);
-    border: 0.5px solid var(--accent);
+    border: 1px solid var(--accent);
 }
 
 footer {
-    margin-top: 100px;
+    margin-top: 300px;
     font-size: 14px;
 }
 
