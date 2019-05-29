@@ -28,6 +28,18 @@ header {
     font-size: 12px;
 }
 
+a:link {
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
 .logo {
     height: 24px;
     width: 24px;
@@ -133,6 +145,7 @@ section ul {
 
 .section-work span:hover h4 {
     transform: scale(1.1);
+    color: var(--accent);
 }
 
 .section-work span:hover .slider div{
@@ -186,10 +199,12 @@ textarea:focus, input:focus{
 
 footer {
     margin-top: 300px;
+    margin-bottom: 30px;
     font-size: 14px;
 }
 
 footer a {
+    margin-left: 20px;
     text-decoration: underline;
 }
 
