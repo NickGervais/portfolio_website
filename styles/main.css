@@ -109,6 +109,7 @@ section ul {
     padding: 20px 40px 20px 40px;
     text-align: center;
     overflow: hidden;
+    transition: 400ms ease-in-out;
 }
 
 .section-work span h4 {
@@ -143,9 +144,12 @@ section ul {
     transition: 400ms ease-in-out;
 }
 
+.section-work span:hover {
+    border: 1px solid var(--accent);
+}
+
 .section-work span:hover h4 {
     transform: scale(1.1);
-    color: var(--accent);
 }
 
 .section-work span:hover .slider div{
@@ -164,11 +168,14 @@ section ul {
 form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
-form input, textarea {
+input, textarea {
     width: 700px;
     max-width: 100%;
     box-sizing: border-box;
@@ -176,13 +183,19 @@ form input, textarea {
     padding: 10px 20px 10px 20px;
     background: transparent;
     border: 1px solid var(--white);
-    color: var(--gray);
+    color: var(--white);
     font-family: inherit;
     font-size: 1em;
 }
 
 textarea:focus, input:focus{
+    border: 1px solid var(--accent);
     outline: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px var(--black) inset !important;
+    -webkit-text-fill-color: var(--white);
 }
 
 #send-message {
@@ -195,6 +208,36 @@ textarea:focus, input:focus{
     background: var(--accent);
     color: var(--white);
     border: 1px solid var(--accent);
+}
+
+#thank-you {
+    position: absolute;
+    z-index: -1;
+    height: 0;
+    width: 100%;
+    background: var(--accent);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    overflow: hidden;
+    text-align: center;
+    transition: 500ms ease-in-out;
+}
+
+.ty {
+    height: 100% !important;
+    z-index: 1 !important;
+    color: white !important;
+}
+
+#clear-ty {
+    margin-top: 20px;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 footer {
