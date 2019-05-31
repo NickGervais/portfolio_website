@@ -335,11 +335,18 @@ footer {
     margin-top: 300px;
     margin-bottom: 30px;
     font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 footer a {
     margin-left: 20px;
     text-decoration: underline;
+}
+
+footer p:first-child {
+    margin-right: 40px;
 }
 
 body::before {
