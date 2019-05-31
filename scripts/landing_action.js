@@ -12,11 +12,10 @@ let landing_action = function(){
         $("#my-name").addClass("my-name-action");
         $("#me").addClass("me-action");
         $("#about-me").addClass("about-me-action");
-        $("#landing-cta span").text("less about me")
+        $("#landing-cta span").text("less about me");
     }
 
 };
-
 $("#landing-cta span").on('click', function(){
     landing_action();
 });

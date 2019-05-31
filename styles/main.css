@@ -55,9 +55,11 @@ header nav a {
 
 #landing {
     margin-top: 15vh;
-    padding: 15vh 0 15vh 0;
+    padding: 18vh 0 18vh 0;
     position: relative;
     overflow: hidden;
+    max-height: 4em;
+    transition: all 200ms ease-in-out;
 }
 
 #me {
@@ -67,6 +69,7 @@ header nav a {
     min-width: 200px;
     background-image: url(../media/me.jpg);
     background-size: cover;
+    background-position: center;
     margin-right: 30px;
     opacity: 0;
     transition: 500ms ease-in-out;
@@ -80,8 +83,7 @@ header nav a {
     align-items: flex-start;
     line-height: 40px;
     font-size: 2em;
-    transition: 500ms ease-in-out;
-    transition-delay: 1s;
+    transition: opacity 500ms ease-in-out 1s, font-size 200ms ease-in-out;
 }
 
 #title div {
@@ -113,6 +115,10 @@ header nav a {
     line-height: 24px;
     opacity: 0;
     transition: 500ms ease-in-out;
+}
+
+.display-none {
+    display: none;
 }
 
 #landing-cta {
@@ -148,7 +154,7 @@ header nav a {
 
 .about-me-action {
     transition-delay: 1600ms !important;
-    top: 52% !important;
+    top: 55% !important;
     opacity: 1 !important;
 }
 
@@ -165,15 +171,20 @@ section ul {
     list-style-type: none;
     padding: 0;
     font-size: 16px;
-    line-height: 30px;
 }
+
+section ul li {
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
 
 section a {
     text-decoration: none;
 }
 
 .half-section {
-    width: 40%;
+    width: 45%;
 }
 
 .section-work {
@@ -196,7 +207,7 @@ section a {
     box-sizing: border-box;
     margin: 10px;
     border: 1px solid var(--white);
-    padding: 20px 40px 20px 40px;
+    padding: 20px 40px;
     text-align: center;
     overflow: hidden;
     transition: 400ms ease-in-out;
@@ -338,6 +349,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 }
 
 footer a {
@@ -375,4 +387,88 @@ body::after {
     background: var(--gray);
     opacity: 0.5;
     z-index: -1;
+}
+
+@media (max-width: 1400px){
+    #about-me {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1015px){
+    #title {
+        font-size: 1.5em;
+    }
+    #my-name {
+        font-size: 1.5em;
+    }
+    #me {
+        height: 100px;
+        min-width: 100px;
+        bottom: 50%;
+    }
+    .me-action {
+        right: 60% !important;
+    }
+    #about-me {
+        left: 0;
+    }
+}
+
+@media (max-width: 800px){
+    #title {
+        font-size: 1.2em;
+    }
+    #my-name {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 750px){
+    body {
+        padding: 0 8% 0 8%;
+    }
+    #landing {
+        margin-top: 0;
+        padding: 25vh 0 25vh 0;
+    }
+    #landing-cta {
+        font-size: 10px;
+    }
+    section ul {
+        font-size: 14px;
+    }
+    section h3 {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 550px){
+    #landing {
+        padding: 15vh 0 35vh 0;
+    }
+    #me {
+        height: 70px;
+        min-width: 70px;
+        bottom: 68%;
+    }
+    .about-me-action {
+        top: 34% !important;
+    }
+    .my-name-action {
+        left: 34% !important;
+    }
+    .section-work span .slider p {
+        font-size: 14px;
+    }
+    .section-work span {
+        padding: 10px 20px;
+    }
+    footer a {
+        margin-left: 10px;
+    }
+    footer p:first-child {
+        margin-right: 0;
+    }
 }
